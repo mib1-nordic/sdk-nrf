@@ -35,8 +35,6 @@
 /applications/nrf_desktop/                @nrfconnect/ncs-si-xcake
 /applications/installer/                  @nrfconnect/ncs-eris
 /applications/installer/**/*.rst          @nrfconnect/ncs-eris-doc
-/applications/hpf/                        @nrfconnect/ncs-ll-ursus
-/applications/hpf/**/*.rst                @nrfconnect/ncs-lowlevel-doc
 /applications/connectivity_bridge/*.rst   @nrfconnect/ncs-cia-doc
 /applications/ipc_radio/*.rst             @nrfconnect/ncs-si-muffin-doc
 /applications/nrf_audio/**/*.rst      @nrfconnect/ncs-audio-doc
@@ -306,10 +304,12 @@
 /drivers/entropy/                         @nrfconnect/ncs-co-drivers @nrfconnect/ncs-aegir
 /drivers/flash/                           @nrfconnect/ncs-co-drivers
 /drivers/gpio/                            @nrfconnect/ncs-co-drivers @nrfconnect/ncs-ll-ursus
+/drivers/gpio/**/*.rst                    @nrfconnect/ncs-lowlevel-doc
 /drivers/hw_cc3xx/                        @nrfconnect/ncs-co-drivers @nrfconnect/ncs-aegir
 /drivers/kmu/                             @nrfconnect/ncs-co-drivers @nrfconnect/ncs-aegir
 /drivers/mpsl/                            @nrfconnect/ncs-co-drivers @nrfconnect/ncs-dragoon
 /drivers/mspi/                            @nrfconnect/ncs-co-drivers @nrfconnect/ncs-ll-ursus
+/drivers/mspi/**/*.rst                    @nrfconnect/ncs-lowlevel-doc
 /drivers/net/                             @nrfconnect/ncs-co-drivers @doki-nordic
 /drivers/nrf71_sr_coex/                   @nrfconnect/ncs-wcg-coex
 /drivers/ppi_seq/                             @nrfconnect/ncs-ll-izera

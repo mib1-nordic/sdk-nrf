@@ -43,18 +43,19 @@ You can enable the following IPC backends:
 Building and running
 ********************
 
-.. |application path| replace:: :file:`applications/hpf/gpio`
+.. |application path| replace:: :file:`drivers/gpio/remote`
 
 .. include:: /includes/application_build_and_run.txt
 
 To build and run the application, you must include code for both the application core and FLPR core.
 The process involves building the :zephyr:code-sample:`blinky` sample with the appropriate sysbuild configuration.
 
+The devicetree overlays that both images require are applied automatically by the matching HPF snippet, unless you disable :kconfig:option:`SB_CONFIG_HPF_APPLY_SNIPPET`.
 For example, to build with icmsg backend, run the following commands (replace ``<build_target>`` with target board, such as ``nrf54l15dk/nrf54l15/cpuapp`` or ``nrf7120dk/nrf7120/cpuapp``):
 
 .. code-block:: console
 
-   west build -b <build_target> -- -DSB_CONFIG_HPF=y -DSB_CONFIG_HPF_GPIO=y -DSB_CONFIG_HPF_GPIO_BACKEND_ICMSG=y -DEXTRA_DTC_OVERLAY_FILE="./boards/<build_target> _hpf_gpio.overlay"
+   west build -b <build_target> -- -DSB_CONFIG_HPF=y -DSB_CONFIG_HPF_GPIO=y -DSB_CONFIG_HPF_GPIO_BACKEND_ICMSG=y
    west flash
 
 Upon successful execution, **LED0** will start flashing.
@@ -85,14 +86,14 @@ The following source files depend on the selected IPC backend:
 FLPR application
 ================
 
-Source file: :file:`applications/hpf/gpio/src/main.c`
+Source file: :file:`drivers/gpio/remote/src/main.c`
 
 FLPR application HRT
 ====================
 
- * Header file: :file:`applications/hpf/gpio/src/hrt/hrt.h`
- * Source file: :file:`applications/hpf/gpio/src/hrt/hrt.c`
+ * Header file: :file:`drivers/gpio/remote/src/hrt/hrt.h`
+ * Source file: :file:`drivers/gpio/remote/src/hrt/hrt.c`
  * Assembly:
 
-   * :file:`applications/hpf/gpio/src/hrt/hrt-nrf54l15.s`
-   * :file:`applications/hpf/gpio/src/hrt/hrt-nrf54lm20a.s`
+   * :file:`drivers/gpio/remote/src/hrt/hrt-nrf54l15.s`
+   * :file:`drivers/gpio/remote/src/hrt/hrt-nrf54lm20a.s`

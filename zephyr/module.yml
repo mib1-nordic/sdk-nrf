@@ -13,6 +13,7 @@ build:
     snippet_root: .
 samples:
   - applications
+  - drivers
   - samples
 tests:
   - tests

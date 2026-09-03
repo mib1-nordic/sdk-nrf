@@ -56,8 +56,8 @@ config FLPRCORE_IMAGE_NAME
 config FLPRCORE_IMAGE_PATH
 	string
 	default "$(ZEPHYR_NRF_MODULE_DIR)/samples/basic/empty" if FLPRCORE_EMPTY
-	default "$(ZEPHYR_NRF_MODULE_DIR)/applications/hpf/gpio" if HPF_GPIO
-	default "$(ZEPHYR_NRF_MODULE_DIR)/applications/hpf/mspi" if HPF_MSPI
+	default "$(ZEPHYR_NRF_MODULE_DIR)/drivers/gpio/remote" if HPF_GPIO
+	default "$(ZEPHYR_NRF_MODULE_DIR)/drivers/mspi/remote" if HPF_MSPI
 	help
 	  Source directory of FLPR core image.
 

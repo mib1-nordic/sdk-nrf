@@ -31,5 +31,4 @@ Applications are also available through the `nRF Connect SDK Add-ons`_, a curate
    ../../applications/ipc_radio/README
    ../../applications/nrf_audio/index
    ../../applications/nrf_desktop/README
-   ../../applications/hpf/hpf
    ../../applications/installer/README

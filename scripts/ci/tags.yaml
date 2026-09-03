@@ -701,7 +701,6 @@ ci_applications_nrf_audio:
 ci_applications_hpf:
   files:
     - modules/hal/nordic/nrfx/
-    - nrf/applications/hpf/
     - nrf/drivers/gpio/
     - nrf/drivers/mspi/
     - nrf/snippets/hpf/
@@ -1335,7 +1334,6 @@ ci_tests_benchmarks_memory:
 
 ci_tests_drivers_hpf:
   files:
-    - nrf/applications/hpf/
     - nrf/drivers/gpio/
     - nrf/drivers/mspi/
     - nrf/snippets/hpf/

@@ -305,7 +305,7 @@ These structures are crucial for configuring and executing data transfers effici
 Building and running
 ********************
 
-.. |application path| replace:: :file:`applications/hpf/mspi`
+.. |application path| replace:: :file:`drivers/mspi/remote`
 
 .. include:: /includes/application_build_and_run.txt
 
@@ -381,17 +381,17 @@ Zephyr driver
 FLPR application
 ================
 
-* Source file: :file:`applications/hpf/mspi/src/main.c`
+* Source file: :file:`drivers/mspi/remote/src/main.c`
 
 FLPR application HRT
 ====================
 
-* Header file: :file:`applications/hpf/mspi/src/hrt/hrt.h`
-* Source file :file:`applications/hpf/mspi/src/hrt/hrt.c`
+* Header file: :file:`drivers/mspi/remote/src/hrt/hrt.h`
+* Source file :file:`drivers/mspi/remote/src/hrt/hrt.c`
 * Assembly:
 
-  * :file:`applications/hpf/mspi/src/hrt/hrt-nrf54l15.s`
-  * :file:`applications/hpf/mspi/src/hrt/hrt-nrf54lm20a.s`
-  * :file:`applications/hpf/mspi/src/hrt/hrt-nrf54lm20b.s`
-  * :file:`applications/hpf/mspi/src/hrt/hrt-nrf54lc10a.s`
-  * :file:`applications/hpf/mspi/src/hrt/hrt-nrf54lv10a.s`
+  * :file:`drivers/mspi/remote/src/hrt/hrt-nrf54l15.s`
+  * :file:`drivers/mspi/remote/src/hrt/hrt-nrf54lm20a.s`
+  * :file:`drivers/mspi/remote/src/hrt/hrt-nrf54lm20b.s`
+  * :file:`drivers/mspi/remote/src/hrt/hrt-nrf54lc10a.s`
+  * :file:`drivers/mspi/remote/src/hrt/hrt-nrf54lv10a.s`

@@ -180,6 +180,7 @@ external_content_contents = [
     (NRF_BASE / "doc" / "nrf", "*"),
     (NRF_BASE, "applications/**/*.rst"),
     (NRF_BASE, "applications/**/doc"),
+    (NRF_BASE, "drivers/**/*.rst"),
     (NRF_BASE, "boards/nordic/**/doc/*.rst"),
     (NRF_BASE, "samples/**/*.rst"),
     (NRF_BASE, "scripts/**/*.rst"),

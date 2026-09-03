@@ -513,7 +513,6 @@
   - "tests/subsys/net/lib/nrf_cloud/**/*"
 
 "CI-test-low-level":
-  - "applications/hpf/**/*"
   - any:
       - "boards/nordic/nrf54*/*"
       - "!boards/nordic/nrf54*dongle/*"
